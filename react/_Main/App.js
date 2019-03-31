@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import '../../assets/resources/grid.css'; 
-import { withLDConsumer } from 'ldclient-react';
+import { Link } from 'react-router-dom';
 
 class App extends Component {
   render() {
-  console.log(this.props);
     return (
       <div className="row">
         <Link to="/formula-one">
@@ -28,4 +26,4 @@ class App extends Component {
   }
 }
 
-export default withLDConsumer()(App);
+export default App;

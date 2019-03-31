@@ -2,7 +2,7 @@ require('dotenv').config();
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { withLDProvider } from 'ldclient-react';
-import '../../init/init.css';
+import '../init/init.css';
 
 const Header = ({children}) => {
   return (
