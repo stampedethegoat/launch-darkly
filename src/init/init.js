@@ -6,7 +6,7 @@ import { createBrowserHistory } from 'history';
 
 // Components
 import Header from '../react/Header'
-import Main from '../react/_Main/App'
+import LaunchDarkly from '../react/LaunchDarkly';
 import FormulaOne from '../react/FormulaOne/App';
 import Stocks from '../react/Stocks/App';
 import NBA from '../react/NBA/App';
@@ -14,7 +14,7 @@ import NBA from '../react/NBA/App';
 ReactDOM.render(
   <Router history={createBrowserHistory()}>
     <Switch>
-      <Route exact path='/' render={() => <Header><Main /></Header>} />
+      <Route exact path='/' render={() => <Header><LaunchDarkly /></Header>} />
       <Route path='/formula-one' render={() => <Header><FormulaOne /></Header>} />
       <Route path='/stocks' render={() => <Header><Stocks /></Header>} />
       <Route path='/nba' render={() => <Header><NBA /></Header>} />
