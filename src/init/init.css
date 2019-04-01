@@ -105,22 +105,33 @@ a:active {
 /* ----------------------------------------------- */
 /* MAIN */
 /* ----------------------------------------------- */
-.img-formula-one,
-.img-stocks,
-.img-nba {
+.img-option,
+.img-option-small {
   opacity: 1;
   height: 500px;
+  line-height: 500px;
   color:grey;
   font-size: 240%;
   word-spacing: 4px;
   letter-spacing: 1px;
   border: 3px solid green;
   border-radius: 20px;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 500px;
   -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
   transition: transform .8s, opacity 0.5s;
+}
+
+.img-option-small{
+  height: 300px;
+  line-height: 300px;
+}
+
+.img-option:hover,
+.img-option-small:hover {
+  cursor: pointer;
+  color: white;
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  transform: scale(1.03);
 }
 
 .img-formula-one {
@@ -133,16 +144,6 @@ a:active {
 
 .img-nba {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/NBA.jpg);
-}
-
-.img-formula-one:hover,
-.img-stocks:hover, 
-.img-nba:hover {
-  cursor: pointer;
-  color: white;
-  -webkit-transform: scale(1.03);
-  -ms-transform: scale(1.03);
-  transform: scale(1.03);
 }
 
 /* ----------------------------------------------- */

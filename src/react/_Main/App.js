@@ -7,17 +7,17 @@ class App extends Component {
     return (
       <div className="row">
         <Link to="/formula-one">
-          <div className="col span-1-of-3 img-formula-one">
+          <div className="col span-1-of-3 img-formula-one img-option">
               F1
           </div>
         </Link>
         <Link to="/stocks">
-          <div className="col span-1-of-3 img-stocks">
+          <div className="col span-1-of-3 img-stocks img-option">
               Stocks
           </div>
         </Link>
         <Link to="/nba">
-          <div className="col span-1-of-3 img-nba">
+          <div className="col span-1-of-3 img-nba img-option">
               NBA
           </div>
         </Link>

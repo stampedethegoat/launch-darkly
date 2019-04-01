@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel init/init.html",
-    "build": "parcel build init/init.html",
+    "dev": "parcel src/init/init.html",
+    "build": "parcel build src/init/init.html",
     "start": "npm run build && live-server dist"
   },
   "keywords": [],
@@ -13,7 +13,6 @@
   "license": "ISC",
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.3.4",
-    "axios": "^0.18.0",
     "dotenv": "^7.0.0",
     "history": "^4.9.0",
     "init": "^0.1.2",
