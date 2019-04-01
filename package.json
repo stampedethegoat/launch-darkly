@@ -7,7 +7,7 @@
     "dev": "parcel src/init/index.html",
     "build": "parcel build src/init/index.html",
     "start": "npm run build && live-server dist",
-    "heroku-postbuild": "npm start"
+    "heroku-postbuild": "react-scripts start"
   },
   "keywords": [],
   "author": "",
@@ -24,7 +24,8 @@
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-moment": "^0.8.4",
-    "react-router-dom": "^5.0.0"
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "^2.1.8"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2"
