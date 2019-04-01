@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/init/init.html",
-    "build": "parcel build src/init/init.html",
+    "dev": "parcel src/init/index.html",
+    "build": "parcel build src/init/index.html",
     "start": "npm run build && live-server dist",
     "heroku-postbuild": "npm start"
   },
