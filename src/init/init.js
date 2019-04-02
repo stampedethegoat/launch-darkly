@@ -10,6 +10,7 @@ import LaunchDarkly from '../react/LaunchDarkly';
 import FormulaOne from '../react/FormulaOne/App';
 import Stocks from '../react/Stocks/App';
 import NBA from '../react/NBA/App';
+import Omni from '../react/OmniFood/App';
 
 ReactDOM.render(
   <Router history={createBrowserHistory()}>
@@ -18,6 +19,7 @@ ReactDOM.render(
       <Route path='/formula-one' render={() => <Header><FormulaOne /></Header>} />
       <Route path='/stocks' render={() => <Header><Stocks /></Header>} />
       <Route path='/nba' render={() => <Header><NBA /></Header>} />
+      <Route path='/omni' render={() => <Omni />} />
     </Switch>
   </Router>, 
   document.querySelector('#root')
