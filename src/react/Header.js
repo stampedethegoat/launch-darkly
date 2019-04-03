@@ -7,7 +7,7 @@ import '../init/init.css';
 const Header = ({children}) => {
   return (
     <div>
-      <div className="links">
+      <div className="links home-row">
         <h3><Link to='/'>Home</Link></h3>
       </div>
       {children}

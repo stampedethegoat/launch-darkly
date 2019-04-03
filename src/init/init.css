@@ -93,6 +93,11 @@ section {
   padding: 1%;
 }
 
+/* ----- ROOT PAGE ----- */
+.home-row {
+  text-align: center;
+}
+
 /* ----- HEADINGS ----- */
 h1,
 h2,
@@ -184,16 +189,52 @@ input[type=submit] {
 .btn-full:link,
 .btn-full:visited,
 input[type=submit] {
-    background-color: #e67e22;
-    border: 1px solid #e67e22;
     color: #fff;
     margin-right: 15px;
 }
 
-.btn-ghost:link,
-.btn-ghost:visited {
+.btn-omni {
+  background-color: #e67e22;
+  border: 1px solid #e67e22;
+}
+
+.btn-nba {
+  background-color: #CF093F;
+  border: 1px solid #CF093F;
+}
+
+.btn-f1 {
+  background-color: #51AD62;
+  border: 1px solid #51AD62;
+}
+
+.btn-stocks {
+  background-color: #1ad2cf;
+  border: 1px solid#1ad2cf;
+}
+
+.btn-omni-ghost:link,
+.btn-omni-ghost:visited {
     border: 1px solid #e67e22;
     color: #e67e22;
+}
+
+.btn-nba-ghost:link,
+.btn-nba-ghost:visited {
+    border: 1px solid #CF093F;
+    color: #CF093F;
+}
+
+.btn-f1-ghost:link,
+.btn-f1-ghost:visited {
+    border: 1px solid #51AD62;
+    color: #51AD62;
+}
+
+.btn-stocks-ghost:link,
+.btn-stocks-ghost:visited {
+    border: 1px solid #1ad2cf;
+    color: #1ad2cf;
 }
 
 .btn:hover,
@@ -218,12 +259,27 @@ input[type=submit]:active {
 /* HEADER */
 /* ----------------------------------------------- */
 
-.omni-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/omni/hero.jpg);
+.header {
   background-size: cover;
   background-position: center;
   height: 100vh;
   background-attachment: fixed;
+}
+
+.omni-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/omni/hero.jpg);
+}
+
+.f1-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/f1/hero.jpg);
+}
+
+.nba-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/nba/nba-hero.jpg);
+}
+
+.stocks-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/stocks/hero.jpg);
 }
 
 .hero-text-box {
@@ -246,6 +302,27 @@ input[type=submit]:active {
 }
 
 .logo {
+  height: 100px;
+  width: auto;
+  float: left;
+  margin-top: 20px;
+}
+
+.nba-logo {
+  height: 70px;
+  width: auto;
+  float: left;
+  margin-top: 40px;
+}
+
+.f1-logo {
+  height: 50px;
+  width: auto;
+  float: left;
+  margin-top: 50px;
+}
+
+.stocks-logo {
   height: 100px;
   width: auto;
   float: left;
@@ -317,3 +394,9 @@ input[type=submit]:active {
   margin: 20px;
   padding-bottom: 20px;
 }
+
+.fade-in {
+  animation: fadeIn 700ms ease-in-out 0.2s both;
+}
+
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}

@@ -16,9 +16,9 @@ ReactDOM.render(
   <Router history={createBrowserHistory()}>
     <Switch>
       <Route exact path='/' render={() => <Header><LaunchDarkly /></Header>} />
-      <Route path='/formula-one' render={() => <Header><FormulaOne /></Header>} />
-      <Route path='/stocks' render={() => <Header><Stocks /></Header>} />
-      <Route path='/nba' render={() => <Header><NBA /></Header>} />
+      <Route path='/formula-one' render={() => <FormulaOne />} />
+      <Route path='/stocks' render={() => <Stocks />} />
+      <Route path='/nba' render={() => <NBA />} />
       <Route path='/omni' render={() => <Omni />} />
     </Switch>
   </Router>, 
